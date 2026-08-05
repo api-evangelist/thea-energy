@@ -1,17 +1,39 @@
 aid: thea-energy
 name: Thea Energy
-description: 'Thea Energy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Thea Energy, Inc. is a fusion energy company headquartered in Kearny, New
+  Jersey, founded in 2022 on stellarator physics and engineering developed at Princeton
+  University and the Princeton Plasma Physics Laboratory. Thea is reinventing the stellarator
+  by replacing complex, hand-wound 3D modular coils with a phased array of simple planar
+  electromagnetic coils, moving the complexity of shaping the magnetic field out of the
+  hardware and into a software control stack that can be tuned over an asset''s lifetime.
+  Its first integrated machine, Eos, is a steady-state, neutron-producing stellarator; the
+  follow-on Helios is intended to be an electricity-producing plant. The company raised a
+  $100M Series B in May 2026 led by Thomas Tull''s US Innovative Technology Fund, and the
+  U.S. Department of Energy has certified its power plant preconceptual design milestone.
+  Thea publishes no public API, developer portal, or machine-readable contract; its only
+  public software surface is a small set of open-source nuclear-engineering and simulation
+  libraries on GitHub.'
+image: https://thea.energy/wp-content/uploads/2023/04/cropped-favicon-192x192.png
 url: https://raw.githubusercontent.com/api-evangelist/thea-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profile
+x-tier-reason: no-api-surface
 specificationVersion: '0.20'
 created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Energy
+- Fusion Energy
+- Nuclear Fusion
+- Stellarator
+- Clean Energy
+- Scientific Computing
+- Simulation
+- Open Source
+- Deep Tech
+- New Jersey
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +41,68 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/thea-energy-domain-security.yml
 - type: Website
+  url: https://thea.energy/
+- type: About
+  url: https://thea.energy/about-us/
+- type: Team
+  url: https://thea.energy/about-us/
+- type: Careers
+  url: https://thea.energy/careers/
+- type: Contact
+  url: https://thea.energy/contact-us/
+- type: Blog
+  url: https://thea.energy/media-press/
+- type: BlogFeeds
+  url: https://thea.energy/feed/
+- type: PressReleases
+  url: https://thea.energy/press-release/
+- type: Research
+  url: https://thea.energy/presentations-and-publications/
+- type: Partners
+  url: https://thea.energy/partnerships/
+- type: GitHubOrganization
+  url: https://github.com/Thea-Energy
+- type: OpenSource
+  url: https://github.com/Thea-Energy
+- type: TermsOfService
+  url: https://thea.energy/terms-conditions/
+- type: PrivacyPolicy
+  url: https://thea.energy/privacy-policy/
+- type: Twitter
+  url: https://twitter.com/TheaEnergy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/thea
+- type: Investors
   url: https://forgeglobal.com/thea-energy_stock/
+- type: Packages
+  url: packages/thea-energy-packages.yml
+- type: LLMsTxt
+  url: llms/thea-energy-llms.txt
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Thea Energy builds fusion power plant hardware — planar-coil stellarator magnets and the
+    Eos machine — and its control software is internal to the device, so there is nothing to
+    expose as an API; thea.energy is a WordPress marketing site with no /developers, no
+    /api, and no api./docs./developer. subdomain in DNS at all.
+  evidence:
+  - url: https://thea.energy/developers
+    status: 404
+  - url: https://thea.energy/openapi.json
+    status: 404
+  - url: https://thea.energy/llms.txt
+    status: 404
+  - url: https://thea.energy/.well-known/agent-card.json
+    status: 404
+  - url: https://api.thea.energy/openapi.json
+    status: 0
+  checked: '2026-08-05'

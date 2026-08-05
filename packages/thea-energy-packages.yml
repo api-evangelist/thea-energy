@@ -1,0 +1,74 @@
+generated: '2026-08-05'
+method: searched
+source: https://github.com/Thea-Energy
+note: >-
+  Thea Energy publishes no public API, so none of these are API client SDKs. They are
+  first-party open-source nuclear-engineering / simulation libraries published by the
+  company's engineers on GitHub, plus one of them distributed on PyPI. Recorded here as
+  the company's real public software surface. No `SDKs` pointer is emitted, because
+  there is no API for a client library to talk to.
+packages:
+- language: python
+  registry: pypi
+  name: basalt-mesh
+  version: '0.2'
+  url: https://pypi.org/project/basalt-mesh/
+  install: pip install basalt-mesh
+  source: https://github.com/Thea-Energy/basalt
+  docs: https://basalt-mesh.readthedocs.io
+  description: Nuclear meshing library for NX and Parasolid based on the Simmetrix mesh suite.
+  license: MIT
+  official: true
+  kind: scientific-library
+  evidence:
+    pypi_status: 200
+    pypi_author: Alex Koen
+    github_top_contributor: akoen
+    match: PyPI summary matches the Thea-Energy/basalt repository description verbatim
+repositories:
+- name: basalt
+  url: https://github.com/Thea-Energy/basalt
+  language: C++
+  license: MIT
+  fork: false
+  description: Nuclear meshing library for NX and Parasolid based on the Simmetrix mesh suite.
+- name: stellarvista
+  url: https://github.com/Thea-Energy/stellarvista
+  language: Python
+  license: MIT
+  fork: false
+  registry: none
+  description: 3D visualizations for DAGMC & OpenMC.
+- name: moab-python
+  url: https://github.com/Thea-Energy/moab-python
+  language: Python
+  fork: false
+  registry: none
+  description: Python bindings work around the MOAB mesh-oriented database.
+- name: aws-builds
+  url: https://github.com/Thea-Energy/aws-builds
+  language: Shell
+  fork: false
+  registry: none
+  description: Build scripts for running the company's simulation toolchain on AWS.
+forks:
+- name: openmc
+  url: https://github.com/Thea-Energy/openmc
+  upstream: https://github.com/openmc-dev/openmc
+- name: opensn
+  url: https://github.com/Thea-Energy/opensn
+  upstream: https://github.com/Open-Sn/opensn
+- name: TMAP8
+  url: https://github.com/Thea-Energy/TMAP8
+  upstream: https://github.com/idaholab/tmap8
+x-evidence:
+  fetched: '2026-08-05'
+  urls:
+  - url: https://api.github.com/orgs/Thea-Energy
+    status: 200
+  - url: https://pypi.org/pypi/basalt-mesh/json
+    status: 200
+  - url: https://basalt-mesh.readthedocs.io
+    status: 200
+  - url: https://registry.npmjs.org/stellarvista
+    status: 404
