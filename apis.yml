@@ -13,6 +13,17 @@ description: 'Thea Energy, Inc. is a fusion energy company headquartered in Kear
   Thea publishes no public API, developer portal, or machine-readable contract; its only
   public software surface is a small set of open-source nuclear-engineering and simulation
   libraries on GitHub.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://thea.energy/wp-content/uploads/2023/04/cropped-favicon-192x192.png
 url: https://raw.githubusercontent.com/api-evangelist/thea-energy/refs/heads/main/apis.yml
 x-type: company
